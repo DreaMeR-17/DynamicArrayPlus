@@ -27,7 +27,7 @@ namespace DynamicArrayPlus
 
                 if (userInput == commandSum)
                 {
-                    GetSumNumbers(userNumbers);
+                    SumUserNumbers(userNumbers);
                 }
                 else if (userInput == commandExit)
                 {
@@ -56,9 +56,11 @@ namespace DynamicArrayPlus
                 Console.WriteLine("Неверный ввод.");
             }
         }
-
-        static void GetSumNumbers(List<int> userNumbers, int sum = 0)
+        
+        static void SumUserNumbers(List<int> userNumbers)
         {
+            int sum = 0;
+
             foreach (int userNumber in userNumbers)
             {
                 sum += userNumber;
